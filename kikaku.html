@@ -1,0 +1,404 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strategic Project Proposal: Weekend Rec-Ops</title>
+    <link rel="stylesheet" href="kikaku.css" />
+  </head>
+  <body>
+    <!-- 固定ヘッダー -->
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="logo">PROP-2026-REC</h1>
+        <nav class="nav-links">
+          <a href="#executive-summary">Top</a>
+          <a href="#solution">プログラム仕様</a>
+          <a href="#requirements">要件定義</a>
+          <a href="#comparison">競合比較</a>
+          <a href="#roi">コスト・ROI</a>
+          <a href="#risks">リスクヘッジ</a>
+        </nav>
+        <div class="header-action">
+          <button id="headerApprovalBtn" class="btn-primary-small">
+            起案承認（決裁）
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ① ヒーローセクション -->
+      <section id="executive-summary" class="hero-section">
+        <div class="hero-container">
+          <div class="hero-text">
+            <span class="badge">CONFIDENTIAL / 30s ADULT RECREATION</span>
+            <h2>
+              大人（アラサー）になった<br />今だからこそできる、<br /><span
+                class="gradient-text"
+                >最高のレクリエーション</span
+              >
+            </h2>
+            <p class="hero-desc">
+              経済的・精神的な余裕を手に入れた今、童心に帰る遊びをロジカルかつ本気で設計。クイズ・大喜利・極上グルメを掛け合わせた、最も投資対効果の高い休日イノベーション提案です。
+            </p>
+            <div class="hero-buttons">
+              <a href="#solution" class="btn-primary">詳細仕様を見る</a>
+              <button id="heroDemoBtn" class="btn-secondary">
+                シミュレーション実行
+              </button>
+            </div>
+          </div>
+          <div class="hero-mockup">
+            <div class="mockup-window">
+              <div class="mockup-header">
+                <span class="dot red"></span><span class="dot yellow"></span
+                ><span class="dot green"></span>
+                <span class="mockup-title"
+                  >Adult_Recreation_Optimization.xlsx</span
+                >
+              </div>
+              <div class="mockup-body">
+                <div class="mockup-card highlight">
+                  <h4>少年の心 × 大人の資本力 (KPI)</h4>
+                  <p class="stat-num">MAX</p>
+                  <span class="stat-trend positive"
+                    >▲ 満足度・エモさ指数ともに過去最高</span
+                  >
+                </div>
+                <div class="mockup-card">
+                  <h4>体力リソース消費率</h4>
+                  <p class="stat-num">30% DOWN</p>
+                  <span class="stat-trend">翌日（月曜）の業務に支障なし</span>
+                </div>
+                <div class="mockup-status">
+                  <div class="status-header">
+                    <span>企画準備ステータス</span>
+                    <span class="status-tag">READY TO START</span>
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ② 何をするか（プログラム仕様：最大8つ対応グリッド） -->
+      <section id="solution" class="section">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading">01. CORE SOLUTIONS</span>
+            <h2>レクリエーション・アーキテクチャ（プログラム仕様一覧）</h2>
+            <p>
+              複数のチームによる競争により、<br />より一層エンタメシナジーを高める。
+            </p>
+          </div>
+
+          <div class="program-grid">
+            <!-- 1. クイズ (確定) -->
+            <div class="prog-card status-confirmed">
+              <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
+              <h3>1. クイズ大会</h3>
+              <p>知識のない大人を晒し上げます。<br>早押しクイズアプリ開発中</p>
+            </div>
+            <!-- 2. 大喜利 (確定) -->
+            <div class="prog-card status-confirmed">
+              <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
+              <h3>2. 第一回さーもんず<br>　IPPONグランプリ</h3>
+              <p>
+                まさかのプロ参戦！？<br>IPPONグランプリ用アプリ開発中
+              </p>
+            </div>
+            <!-- 3. 飲み会ゲーム (確定) -->
+            <div class="prog-card status-confirmed">
+              <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
+              <h3>3. シラフ飲み会ゲーム</h3>
+              <p>
+                「酔ってるから負けるだけやし」とかの言い訳はもういらない。さーもんず最強決めようや。
+              </p>
+            </div>
+            <!-- 4. 朝までそれ正解 (確定) -->
+            <div class="prog-card status-confirmed">
+              <span class="prog-time">⏱ 予想所要時間：30分</span>
+              <h3>4. 朝までそれ正解</h3>
+              <p>矢嶋がやりたい。</p>
+            </div>
+            <!-- 5. 飲み会 (最終フェーズ・確定) -->
+            <div class="prog-card status-confirmed">
+              <span class="prog-time">⏱ 予想所要時間：180分〜無限</span>
+              <h3>5. 最終フェーズ</h3>
+              <p>お店どーする？？</p>
+            </div>
+            <!-- 6. ジェスチャーゲーム (検討中) -->
+            <div class="prog-card status-pending">
+              <span class="prog-time">⏱ 予想所要時間：30分</span>
+              <h3>6. ジェスチャー伝達セッション</h3>
+              <p>
+                身体表現のみで情報を伝達する非言語コミュニケーション負荷試験。ボディランゲージの限界に挑戦。
+              </p>
+            </div>
+            <!-- 7. 〇×クイズ (検討中) -->
+            <div class="prog-card status-pending">
+              <span class="prog-time">⏱ 予想所要時間：30分</span>
+              <h3>7. 〇×二者択一クイズ</h3>
+              <p>
+                確率50%の究極の選択肢に対し、直感と統計的勘を頼りに生存を競う高速レスポンス型クイズ。
+              </p>
+            </div>
+            <!-- 8. 予備枠 / エクストラ (検討中) -->
+            <div class="prog-card status-pending">
+              <span class="prog-time">⏱ 予想所要時間：60分〜90分</span>
+              <h3>8. ゲーム大会</h3>
+              <p>
+                スマブラとかマリパとか色々やるのも楽しいよね。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ③ 今回の企画に関する要件 -->
+      <section id="requirements" class="section bg-light">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading">02. REQUIREMENTS & SCOPE</span>
+            <h2>今回の企画に関する要件定義</h2>
+            <p>
+              プロジェクトを成功裏に完遂するための前提条件およびタイムラインを定義します。
+            </p>
+          </div>
+          <div class="card-grid">
+            <div class="issue-card">
+              <div class="issue-icon">🎯</div>
+              <h3>ターゲット要件</h3>
+              <p>
+                直近で笑いとアルコールを渇望しており、カチッとした場でもふざけ心を忘れないすべてのステークホルダー。
+              </p>
+            </div>
+            <div class="issue-card">
+              <div class="issue-icon">📅</div>
+              <h3>タイムスケジュール</h3>
+              <p>
+                13:00 開会 → クイズ・大喜利・ゲームフェーズ → 17:00
+                懇親会（飲み会）へ移行 → 自由解散。
+              </p>
+            </div>
+            <div class="issue-card">
+              <div class="issue-icon">🔒</div>
+              <h3>前提条件（リソース）</h3>
+              <p>
+                参加者全員が「柔軟な思考力と圧倒的なノリ」を装備し、定刻通りのアジリティを発揮できること。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ④ 他社との比較 -->
+      <section id="comparison" class="section">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading">03. COMPETITIVE ANALYSIS</span>
+            <h2>競合企画との比較（他案との優位性検証）</h2>
+            <p>
+              他メンバーから挙がっている代替案と比較し、本企画の圧倒的な優位性を証明します。
+            </p>
+          </div>
+
+          <div class="table-wrapper">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>評価項目</th>
+                  <th>競合A案：ナガスパ日帰り</th>
+                  <th class="highlight-col">
+                    本提案（当レクリエーション企画）
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>移動負荷・アジリティ</strong></td>
+                  <td>往復4時間超の運転（渋滞リスク高）</td>
+                  <td class="highlight-col text-accent">
+                    <strong>移動ゼロ〜最小限（移動ストレス皆無）</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>コストパフォーマンス</strong></td>
+                  <td>高額（レンタカー+高速代+ガソリン+入園料：約20,000円〜 / 名）</td>
+                  <td class="highlight-col text-accent">
+                    <strong>最適化済み（レク+飲み代：約10,000円〜 / 名）</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>知的能力・ユーモアの発揮</strong></td>
+                  <td>絶叫マシーンによる物理的Gのみ</td>
+                  <td class="highlight-col text-accent">
+                    <strong>極めて高い（大喜利・朝までそれ正解 など）</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>天候・外部依存リスク</strong></td>
+                  <td>雨天時に満足度が大幅ダウン</td>
+                  <td class="highlight-col text-accent">
+                    <strong>完全インドア対応（SLA 99.9%保証）</strong>
+                  </td>
+                </tr>
+                <tr>
+                  <td><strong>アルコールフェーズ</strong></td>
+                  <td>ドライバーは終日飲酒不可（致命的）</td>
+                  <td class="highlight-col text-accent">
+                    <strong>最終フェーズで全員即時入酒可能</strong>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <!-- ⑤ アクセス・費用 (ROI) -->
+      <section id="roi" class="section bg-light">
+        <div class="container">
+          <div class="section-title">
+            <span class="sub-heading">04. ACCESS & BUDGET</span>
+            <h2>アクセス・費用および投資対効果</h2>
+            <p>
+              ミニマムな初期投資により、無限大の精神的リターンをもたらします。
+            </p>
+          </div>
+          <div class="roi-grid">
+            <div class="roi-card cost-card">
+              <h3>コストアロケーション（予算）</h3>
+              <div class="cost-row">
+                <span>会場・飲み代等の総額目安</span>
+                <strong>約 10,000円〜 / 名</strong>
+              </div>
+              <div class="cost-row">
+                <span>開催場所（アクセス）</span>
+                <strong>レンタルスペース ＆ 居酒屋</strong>
+              </div>
+            </div>
+            <div class="roi-card return-card">
+              <h3>定量・定性的リターン</h3>
+              <div class="cost-row">
+                <span>ストレス軽減効率</span>
+                <strong class="text-accent">圧倒的プラス</strong>
+              </div>
+              <div class="cost-row">
+                <span>翌週からの稼働率</span>
+                <strong class="text-accent">爆上げ（当社比）</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- リスクマネジメント（Q&A / FAQ） -->
+      <section id="risks" class="section">
+        <div class="container-narrow">
+          <div class="section-title">
+            <span class="sub-heading">05. RISK MANAGEMENT</span>
+            <h2>リスクヘッジおよびQ&A</h2>
+          </div>
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-question">
+                Q. クイズや大喜利で誰もウケなかった場合の対応方針は？
+              </button>
+              <div class="faq-answer">
+                <p>
+                  <strong>【Plan B発動】</strong>
+                  スベった空気を即座に「味わい深い仕様」としてシステム的に処理し、強引にアルコール（懇親会フェーズ）へエスカレーションして記憶から抹消します。
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Q. ジェスチャーや〇×クイズの採用・不採用の決定時期は？
+              </button>
+              <div class="faq-answer">
+                <p>
+                  当日までの参加人数や全体のタイムアロケーションのシュミレーション結果を踏まえ、アジリティ重視で直前に動的に決定されます。
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question">
+                Q. 参加者のアレルギーや食事の嗜好、帰宅時間の制約への配慮は？
+              </button>
+              <div class="faq-answer">
+                <p>
+                  出欠フォームの特記事項欄にて事前に例外データを収集し、アロケーション時に完全に除外・最適化を行います。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- フッター -->
+    <footer class="site-footer">
+      <div class="container text-center">
+        <h2>本件企画に関する全会一致の承認（出席）を求めます</h2>
+        <p>速やかにフィードバック、または異議申し立てを行ってください。</p>
+        <button id="footerApprovalBtn" class="btn-primary btn-large">
+          稟議書の承認（出欠送信）
+        </button>
+        <p class="copyright">
+          &copy; 2026 Strategic Rec-Ops Promotion Committee.
+        </p>
+      </div>
+    </footer>
+
+    <!-- モーダル（意思決定フォーム） -->
+    <div id="approvalModal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3>意思決定フロー（出欠入力）</h3>
+        <p>本案件に対するあなたの立場を明確に表明してください。</p>
+        <form id="feedbackForm">
+          <div class="form-group">
+            <label>ステークホルダー名（氏名）:</label>
+            <input
+              type="text"
+              id="userName"
+              placeholder="例: 友人 太郎"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label>ガバナンス判定（出欠）:</label>
+            <select id="approvalStatus">
+              <option value="approved">承認（完全参戦） 🚀</option>
+              <option value="conditional">条件付き承認（要調整） ⏳</option>
+              <option value="rejected">否決（今回は不参加） 🛑</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>特記事項・要望事項（アレルギー等）:</label>
+            <textarea
+              id="feedbackText"
+              rows="3"
+              placeholder="ご意見、または特殊要件があればご記入ください"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="btn-primary w-100"
+            style="margin-top: 15px"
+          >
+            稟議を回す（送信）
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <script src="kikaku.js"></script>
+  </body>
+</html>
