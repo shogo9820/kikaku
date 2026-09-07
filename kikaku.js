@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // 1. モーダル開閉機能（出欠確認フォーム）
   const modal = document.getElementById("approvalModal");
   const openModalBtns = document.querySelectorAll(
-    "#headerApprovalBtn, #heroDemoBtn, #footerApprovalBtn",
+    "#heroDemoBtn, #footerApprovalBtn",
   );
   const closeModalBtn = document.querySelector(".close-btn");
 
