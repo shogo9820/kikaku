@@ -682,29 +682,123 @@ body {
     font-size: 0.9rem;
 }
 
-/* レスポンシブ対応 */
+/* ==========================================================================
+   レスポンシブ対応（モバイル・タブレット最適化）
+   ========================================================================== */
+
+/* 1. タブレット・PC共通：ヘッダーのナビゲーションをスマホ時はスクロール可能に */
 @media (max-width: 1024px) {
+    .site-header .header-container {
+        flex-direction: column;
+        gap: 12px;
+        padding: 12px 16px;
+    }
+
+    .nav-links {
+        gap: 15px;
+        width: 100%;
+        justify-content: center;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch; /* iOSのスムーズスクロール */
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-text h2 {
+        font-size: 2rem;
+    }
+
+    .hero-desc {
+        margin: 0 auto 24px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
     .program-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+
     .card-grid {
         grid-template-columns: 1fr;
     }
-    .hero-container {
-        grid-template-columns: 1fr;
-    }
+
     .section {
         min-height: auto;
-        padding: 80px 0;
+        padding: 60px 0;
     }
 }
 
+/* 2. スマートフォン（画面幅600px以下）のレイアウト最適化 */
 @media (max-width: 600px) {
+    /* ヒーローエリアの調整 */
+    .hero-section {
+        padding: 140px 0 40px; /* ヘッダーが2行になった分の余白確保 */
+    }
+
+    .hero-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column; /* ボタンを縦並びに */
+        width: 100%;
+        gap: 12px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* 各セクションタイトルの調整 */
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+
+    /* グリッドレイアウトをすべて1列に */
     .program-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
     }
+
     .roi-grid {
         grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    /* テーブルの横スクロール対応（はみ出し防止） */
+    .table-wrapper {
+        margin: 0 -4px; /* 端まで表示を見せる微調整 */
+    }
+
+    .comparison-table th,
+    .comparison-table td {
+        padding: 12px 14px;
+        font-size: 0.85rem; /* 文字サイズを少し小さく */
+        white-space: nowrap; /* テキストの意図しない崩れを防ぐ */
+    }
+
+    /* ROIカード内の調整 */
+    .roi-card {
+        padding: 24px;
+    }
+
+    /* モーダル（出欠フォームPopup）のスマホ最適化 */
+    .modal-content {
+        width: 92%;
+        padding: 24px 20px;
+        margin: 0 16px;
+        max-height: 90vh; /* 画面からはみ出さないように制限 */
+        overflow-y: auto; /* フォームが長い場合にスクロール可能に */
     }
 }
 
