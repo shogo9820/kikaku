@@ -99,19 +99,21 @@
 
           <div class="program-grid">
             <!-- 1. クイズ (確定) -->
-            <div class="prog-card status-confirmed">
+            <div class="prog-card status-confirmed url-link">
               <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
               <h3>1. クイズ大会</h3>
-              <p>知識のない大人を晒し上げます。<br>早押しクイズアプリ開発中</p>
-            </div>
-            <!-- 2. 大喜利 (確定) -->
-            <div class="prog-card status-confirmed">
-              <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
-              <h3>2. 第一回さーもんず<br>　IPPONグランプリ</h3>
               <p>
-                まさかのプロ参戦！？<br>IPPONグランプリ用アプリ開発中
+                知識のない大人を晒し上げます。<br />早押しクイズアプリ開発中
               </p>
             </div>
+
+            <!-- 2. 大喜利 (確定) -->
+            <div class="prog-card status-confirmed url-link">
+              <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
+              <h3>2. 第一回さーもんず<br />　IPPONグランプリ</h3>
+              <p>まさかのプロ参戦！？<br />IPPONグランプリ用アプリ開発中</p>
+            </div>
+
             <!-- 3. 飲み会ゲーム (確定) -->
             <div class="prog-card status-confirmed">
               <span class="prog-time">⏱ 予想所要時間：30分〜60分</span>
@@ -120,18 +122,21 @@
                 「酔ってるから負けるだけやし」とかの言い訳はもういらない。さーもんず最強決めようや。
               </p>
             </div>
+
             <!-- 4. 朝までそれ正解 (確定) -->
             <div class="prog-card status-confirmed">
               <span class="prog-time">⏱ 予想所要時間：30分</span>
               <h3>4. 朝までそれ正解</h3>
               <p>矢嶋がやりたい。</p>
             </div>
+
             <!-- 5. 飲み会 (最終フェーズ・確定) -->
             <div class="prog-card status-confirmed">
               <span class="prog-time">⏱ 予想所要時間：180分〜無限</span>
               <h3>5. 最終フェーズ</h3>
               <p>お店どーする？？</p>
             </div>
+
             <!-- 6. ジェスチャーゲーム (検討中) -->
             <div class="prog-card status-pending">
               <span class="prog-time">⏱ 予想所要時間：30分</span>
@@ -140,6 +145,7 @@
                 身体表現のみで情報を伝達する非言語コミュニケーション負荷試験。ボディランゲージの限界に挑戦。
               </p>
             </div>
+
             <!-- 7. 〇×クイズ (検討中) -->
             <div class="prog-card status-pending">
               <span class="prog-time">⏱ 予想所要時間：30分</span>
@@ -148,50 +154,12 @@
                 確率50%の究極の選択肢に対し、直感と統計的勘を頼りに生存を競う高速レスポンス型クイズ。
               </p>
             </div>
+
             <!-- 8. 予備枠 / エクストラ (検討中) -->
             <div class="prog-card status-pending">
               <span class="prog-time">⏱ 予想所要時間：60分〜90分</span>
               <h3>8. ゲーム大会</h3>
-              <p>
-                スマブラとかマリパとか色々やるのも楽しいよね。
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ③ 今回の企画に関する要件 -->
-      <section id="requirements" class="section bg-light">
-        <div class="container">
-          <div class="section-title">
-            <span class="sub-heading">02. REQUIREMENTS & SCOPE</span>
-            <h2>今回の企画に関する要件定義</h2>
-            <p>
-              プロジェクトを成功裏に完遂するための前提条件およびタイムラインを定義します。
-            </p>
-          </div>
-          <div class="card-grid">
-            <div class="issue-card">
-              <div class="issue-icon">🎯</div>
-              <h3>ターゲット要件</h3>
-              <p>
-                直近で笑いとアルコールを渇望しており、カチッとした場でもふざけ心を忘れないすべてのステークホルダー。
-              </p>
-            </div>
-            <div class="issue-card">
-              <div class="issue-icon">📅</div>
-              <h3>タイムスケジュール</h3>
-              <p>
-                13:00 開会 → クイズ・大喜利・ゲームフェーズ → 17:00
-                懇親会（飲み会）へ移行 → 自由解散。
-              </p>
-            </div>
-            <div class="issue-card">
-              <div class="issue-icon">🔒</div>
-              <h3>前提条件（リソース）</h3>
-              <p>
-                参加者全員が「柔軟な思考力と圧倒的なノリ」を装備し、定刻通りのアジリティを発揮できること。
-              </p>
+              <p>スマブラとかマリパとか色々やるのも楽しいよね。</p>
             </div>
           </div>
         </div>
@@ -229,9 +197,13 @@
                 </tr>
                 <tr>
                   <td><strong>コストパフォーマンス</strong></td>
-                  <td>高額（レンタカー+高速代+ガソリン+入園料：約20,000円〜 / 名）</td>
+                  <td>
+                    高額（レンタカー+高速代+ガソリン+入園料：約20,000円〜 / 名）
+                  </td>
                   <td class="highlight-col text-accent">
-                    <strong>最適化済み（レク+飲み代：約10,000円〜 / 名）</strong>
+                    <strong
+                      >最適化済み（レク+飲み代：約10,000円〜 / 名）</strong
+                    >
                   </td>
                 </tr>
                 <tr>
