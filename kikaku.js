@@ -102,7 +102,7 @@ progCards.forEach(card => {
     
     card.addEventListener('click', () => {
         // 別タブで指定のURLを開く
-        window.open('https://netlify.app', '_blank', 'noopener,noreferrer');
+        window.open('https://ippon-quiz.netlify.app', '_blank', 'noopener,noreferrer');
     });
 });
 
