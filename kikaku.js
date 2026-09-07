@@ -103,7 +103,7 @@ linkedCards.forEach(card => {
     
     card.addEventListener('click', () => {
         // 別タブで開く（ファイル名が index.html なら末尾の /kikaku.html は消してOKです）
-        window.open('https://shogo9820.github.io/ippon/', '_blank', 'noopener,noreferrer');
+        window.open('https://shogo9820.github.io/ippon/public', '_blank', 'noopener,noreferrer');
     });
 });
 
