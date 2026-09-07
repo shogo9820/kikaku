@@ -94,15 +94,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach((section) => observer.observe(section));
 
-  // プログラムカード（クイズと大喜利）のクリックイベント
-const progCards = document.querySelectorAll('.prog-card.status-confirmed');
-progCards.forEach(card => {
-    // カーソルをポインター（指マーク）にする
+// 「url-link」というクラスがついたカードだけをすべて取得
+const linkedCards = document.querySelectorAll('.prog-card.url-link');
+
+linkedCards.forEach(card => {
+    // マウスカーソルを指マークにする
     card.style.cursor = 'pointer';
     
     card.addEventListener('click', () => {
-        // 別タブで指定のURLを開く
-        window.open('https://ippon-quiz.netlify.app', '_blank', 'noopener,noreferrer');
+        // 別タブで開く（ファイル名が index.html なら末尾の /kikaku.html は消してOKです）
+        window.open('https://netlify.app', '_blank', 'noopener,noreferrer');
     });
 });
 
